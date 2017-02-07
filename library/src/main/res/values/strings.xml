@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+
+    <string name="high_low">%1$s \u2109 \\ %2$s \u2109</string>
+    <string name="chance_of_rain">Chance of rain: %1$s\%</string>
+
+</resources>

@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+    kotlin_version = '1.0.6'
+    supportVersion = "25.1.0"
+    glideVersion = "3.7.0"
+    picassoVersion = "2.5.2"
+    gsonVersion = "2.4"
+}
+
+buildscript {
+    ext.kotlin_version = '1.0.6'
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+
+ext.javaDeps = [
+        cardview: "com.android.support:cardview-v7:$supportVersion",
+        glide   : "com.github.bumptech.glide:glide:$glideVersion",
+        picasso : "com.squareup.picasso:picasso:$picassoVersion",
+        gson    : "com.google.code.gson:gson:$gsonVersion",
+]
+
+ext.kotlinDeps = [
+        kotlinstdlib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+]
