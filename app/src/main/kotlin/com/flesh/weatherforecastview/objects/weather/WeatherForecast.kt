@@ -1,11 +1,12 @@
-package edu.ua.caps.emergencypreparedness.models.weather
+package com.flesh.weatherforecastview.objects.weather
 
-import com.flesh.weatherforcast.helper.WeatherHelper
-import com.flesh.weatherforcast.interfaces.WeatherForecastInterface
+import com.flesh.weatherforecastview.library.helpers.WeatherHelper
+import com.flesh.weatherforecastview.library.interfaces.WeatherForecastInterface
 import com.google.gson.annotations.SerializedName
 
 /**
  * Created by afleshner on 2/2/2017.
+ * The main WeatherForecast object that conforms to the WeatherForecastInterface
  */
 class WeatherForecast : WeatherForecastInterface {
 
@@ -35,7 +36,7 @@ class WeatherForecast : WeatherForecastInterface {
     }
 
     override fun getHeatherHelperList(): MutableList<WeatherHelper> {
-        var list: MutableList<WeatherHelper> = mutableListOf()
+        val list: MutableList<WeatherHelper> = mutableListOf()
         time?.startPeriodName!!.mapIndexedTo(list) { i, startPeriodName ->
             WeatherHelper(time?.startPeriodName!![i],
                     time?.tempLabel!![i],

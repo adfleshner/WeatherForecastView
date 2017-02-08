@@ -5,7 +5,8 @@ import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.flesh.weatherforcast.ForecastView;
+import com.flesh.weatherforecastview.library.ForecastView;
+
 
 public class MainActivity extends AppCompatActivity {
 

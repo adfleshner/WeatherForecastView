@@ -1,8 +1,9 @@
-package edu.ua.caps.emergencypreparedness.models.weather
+package com.flesh.weatherforecastview.objects.weather
 
 import com.google.gson.annotations.SerializedName
 /**
  * Created by afleshner on 2/2/2017.
+ * Weather Forecast Location object
  */
 class WeatherForecastLocation {
 

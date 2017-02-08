@@ -1,9 +1,10 @@
-package edu.ua.caps.emergencypreparedness.models.weather
+package com.flesh.weatherforecastview.objects.weather
 
 import com.google.gson.annotations.SerializedName
 
 /**
  * Created by afleshner on 2/2/2017.
+ * The Current Weather forecast
  */
 class WeatherForecastCurrentObservation {
     @SerializedName("id") var id: String? = null

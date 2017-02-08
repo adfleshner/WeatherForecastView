@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.flesh.weatherforecastview.MainActivity">
 
-    <com.flesh.weatherforcast.ForecastView
+    <com.flesh.weatherforecastview.library.ForecastView
         android:id="@+id/fullForecast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

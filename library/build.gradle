@@ -51,6 +51,10 @@ android {
         abortOnError false
         checkReleaseBuilds false
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        androidTest.java.srcDirs += 'src/androidTest/kotlin'
+    }
 }
 
 dependencies {

@@ -1,12 +1,11 @@
 package com.flesh.weatherforecastview
 
-import android.os.Handler
-import android.os.Looper
+import com.flesh.weatherforecastview.objects.weather.WeatherForecast
 import com.google.gson.Gson
-import edu.ua.caps.emergencypreparedness.models.weather.WeatherForecast
 
 /**
  * Created by afleshner on 2/7/2017.
+ * Mock weather getter provider
  */
 class WeatherGetter {
 

@@ -1,4 +1,4 @@
-package com.flesh.library;
+package com.flesh.weatherforecastview.library;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

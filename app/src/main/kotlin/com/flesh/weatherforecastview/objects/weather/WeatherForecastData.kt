@@ -1,9 +1,10 @@
-package edu.ua.caps.emergencypreparedness.models.weather
+package com.flesh.weatherforecastview.objects.weather
 
 import com.google.gson.annotations.SerializedName
 
 /**
  * Created by afleshner on 2/2/2017.
+ * An object of lists of strings that all conform to each other.
  */
 class WeatherForecastData {
     @SerializedName("temperature") var temperature: List<String>? = null
