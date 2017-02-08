@@ -11,8 +11,14 @@ ext {
 buildscript {
     ext.kotlin_version = '1.0.6'
 
+
+
     repositories {
         jcenter()
+        maven{
+            url 'https://dl.bintray.com/adfleshner/maven'
+        }
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
@@ -56,4 +62,5 @@ ext.kotlinDeps = [
         kotlinstdlib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 ]
 
+apply plugin: 'com.jfrog.bintray'
 
