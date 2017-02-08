@@ -2,6 +2,31 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'weather-forecast-view'
+
+    publishedGroupId = 'com.flesh.weatherforecast.library'
+    libraryName = 'weather-forecast-view'
+    artifact = 'weather-forecast-view'
+
+    libraryDescription = 'A small view that shows the weather forecast'
+
+    siteUrl = 'https://github.com/adfleshner/WeatherForecastView'
+    gitUrl = 'https://github.com/adfleshner/WeatherForecastView.git'
+
+    libraryVersion = '0.1'
+
+    developerId = 'adfleshner'
+    developerName = 'Aaron Fleshner'
+    developerEmail = 'adfleshner@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
@@ -20,6 +45,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
     }
 }
 
